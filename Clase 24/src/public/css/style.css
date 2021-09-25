@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+}
+
+h3 {
+    background-color: blue;
+    display: inline;
+}
+
+p {
+    background-color: red;
+}
+
+a {
+    background-color: blueviolet;
+}
+
+div {
+    background-color: brown;
+    display: none;
+}
+
+span {
+    background-color: burlywood;
+}
+
+.lista-4 {
+    list-style: none;
+}

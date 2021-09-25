@@ -1,0 +1,178 @@
+
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes fantasma {
+    0% { opacity: 0; }
+    50% { opacity: 1; transform: translateY(-100px); }
+    100% { opacity: 0; }
+}
+
+img {
+    opacity: 0;
+    width: 100px;
+    animation: fantasma 3s infinite;
+}
+
+@keyframes animacion1 {
+    from {
+        background-color: red;
+        border-radius: 0px 0 ;
+    }
+    to {
+        background-color: yellow;
+        border-radius: 20px 0;
+    }
+}
+
+div.animacion1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 20px 0 ;
+    animation-name: animacion1;
+    animation-duration: 4s;
+}
+
+@keyframes animacion2 {
+    0% {
+        background-color: red;
+        border-radius: 0px 0 ;
+    }
+    25% {
+        background-color: purple;
+        border-radius: 20px 5px;
+    }
+    50%{
+        background-color: lightgreen;
+        border-radius: 50px 25px;
+    }
+    100% {
+        background-color: rgb(5, 122, 107);
+        border-radius: 50%;
+    }
+}
+
+div.animacion2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    animation-name: animacion2;
+    animation-duration: 8s;
+}
+
+@keyframes animacion3 {
+    0% {
+        background-color: red;
+        border-radius: 0px 0 ;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: purple;
+        border-radius: 20px 5px;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: lightgreen;
+        border-radius: 50px 25px;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: rgb(144, 238, 194);
+        border-radius: 35px 10px;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: rgb(5, 122, 107);
+        border-radius: 50%;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+div.animacion3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: rgb(5, 122, 107);
+    animation-name: animacion3;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+/*  MENU  */
+/* 
+ul {
+    display: none;
+}
+
+input:checked ~ ul {
+    display: block;
+}  */
+
+ul {
+    opacity: 0;
+    width: 50%;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius:  0 20px 20px 0;
+    padding: 50px 0;
+    transition: all 0.5s ease;
+    margin: 0;
+}
+
+
+
+input:checked ~ ul {
+    opacity: 1;
+    width: 50%;
+}
+
+input {
+    display: none;
+}
+
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid grey;
+    background-color: rgb(207, 233, 233);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    transition: all 0.5s ease;
+}
+
+label:hover {
+    background-color: azure;
+}
+
+li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    width: 25%;
+    transition: all 0.5s ease-in-out;
+}
+
+li:hover {
+    width: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 20px 20px 0;
+}
+

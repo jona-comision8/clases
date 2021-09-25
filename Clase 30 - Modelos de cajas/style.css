@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid yellow;
+    background-color: aqua;
+    height: 100vh;
+    padding: 30px;
+}
+
+.box {
+    border: solid 10px black ;
+    background-color: beige;
+    height: 150px;
+    margin: 0px auto;
+    padding: 15px;
+    width: 150px;
+}
+
+.box-2 {
+    border: solid 10px black ;
+    background-color: beige;
+    height: 150px;
+    margin: 10px auto;
+    padding: 15px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.contain {
+    background-color: blueviolet;
+    height: 100%;
+}

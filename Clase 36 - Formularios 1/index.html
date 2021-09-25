@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <form action="index.html">
+        
+        <label for="nombre">Nombre: </label>
+        <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre"><br>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" placeholder="Ingrese su apellido" name="apellido" id="apellido"><br>
+        
+        <label for="email">Email</label>
+        <input type="email" placeholder="Ingrese su email" name="email" id="email"><br>
+        
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass"><br>
+       
+        <label for="tel">Teléfono</label>
+        <input type="tel" name="tel" id="tel"><br>
+       
+        <label for="calle">Calle</label>
+        <input type="text" name="calle" id="calle"><br>
+        
+        <label for="altura">Número</label>
+        <input type="number" name="altura" id="altura"><br>
+        
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="nacimiento" id="fecha"><br>
+        
+        <label for="color">Elija un color</label>
+        <input type="color" name="color" id="color"><br>
+
+        <label for="mensaje">Escriba su mensaje</label>
+        <textarea placeholder="Su mensaje aquí" name="mensaje"  id="mensaje" cols="30" rows="10" ></textarea><br>
+
+        <select name="pais" id="">
+            <option value="AR">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="UY">Uruguay</option>  
+            <option value="" hidden selected>Elija su país</option>
+        </select><br><br>
+        <label>Choose a browser from this list:
+        <input list="browsers" name="myBrowser" /></label>
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Opera Mobile">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist>
+        <br>
+        <br>
+        <br>
+        <h5>Medios de pago</h5>
+        
+        <label for="efectivo"><input type="radio" name="tipoDePago" id="efectivo" value="efectivo" checked>Efectivo</label>
+         <br>
+
+        <label for="debito">Débito</label>
+        <input type="radio" name="tipoDePago" id="debito" value="debito"><br>
+
+        <label for="credito">Crédito</label>
+        <input type="radio" name="tipoDePago" id="credito" value="credito"><br>
+
+        <br>
+
+        <h5>Tus hobbies</h5>
+
+        <label for="dibujar">Dibujar</label>
+        <input type="checkbox" name="hobbies" id="dibujar" value="dibujar"><br>
+
+        <label for="jugar">Jugar</label>
+        <input type="checkbox" name="hobbies" id="jugar" value="jugar"><br>
+
+        <label for="programar">Programar</label>
+        <input type="checkbox" name="hobbies" id="programar" value="programar"><br>
+
+        <br>
+
+        <label for="terminos">Acepto los <a href="">términos y condiciones</a> </label>
+        <input type="checkbox" name="terms" id="terminos">
+         <br>
+
+        <label for="archivo">Subi una foto de perfil</label><br>
+        <input type="file" name="avatar" accept=".jpg" id="archivo">
+        <br>
+        <label for="archivos">Subi fotos de tu producto</label><br>
+        <input type="file" name="products" id="archivos" multiple>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+header {
+    background-color: aqua;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: orange;
+}
+
+section {
+    background-color: orchid;
+    width: 90%;
+}
+
+article {
+    background-color: palegreen;
+    width: 100px;
+}
+
+footer {
+    background-color: paleturquoise;
+}

@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 10px;
+}
+
+header .logo {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 70px;
+    order: 0;
+}
+
+header .avatar {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    order: 1;
+}
+
+header nav {
+    flex-grow: 0.75;
+    order: 2;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: rgb(104, 104, 104);
+    list-style: none;
+    padding: 5px;
+}
+
+/* Main */
+
+.item {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(104, 104, 104);
+    height: 250px;
+    width: 380px;
+    transition: all 0.5s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+} 
+
+/* Section 1 */
+
+.container-1 {
+    height: 1000px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-1 .item {
+    width: 100%;
+}
+
+.container-1 article:nth-child(2) {
+    background-color: blue;
+    order: -1;
+}
+
+/* Section 2 */
+
+.container-2 {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container-2 .item {
+    border: 1px solid black;
+}
+
+.container-2 article:nth-child(even) {
+    background-color: blueviolet;
+    order: -1;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
